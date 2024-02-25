@@ -1,0 +1,12 @@
+name: sedona
+services:
+    sedona:
+        ports:
+            - 8888:8888
+            - 8080:8080
+            - 8081:8081
+            - 4040:4040
+        image: apache/sedona:1.5.1
+        volumes:
+          - './data:/opt/workspace/data' 
+          - './sedona:/opt/workspace/sedona'
